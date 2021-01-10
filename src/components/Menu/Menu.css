@@ -1,0 +1,15 @@
+.menu {
+    margin-top: 150px;
+    text-align: left;
+    padding: 25px;
+}
+
+.menu_item {
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.menu_item_number {
+    font-size: 14px;
+    color: #1a0dab;
+}

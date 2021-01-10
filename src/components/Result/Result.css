@@ -1,0 +1,30 @@
+.result {
+    text-align: left;
+    margin-bottom: 40px;
+    cursor: pointer;
+    /* padding-left: 5px; */
+    
+}
+
+/* .result:hover {
+    border-left: 2px solid #1a0dab;    
+} */
+
+.result_key {
+    font-weight: 700;
+}
+
+.ikey {
+    color: #1a0dab;
+}
+
+.result_heading {
+    color: #1a0dab;
+    font-weight: 500;
+}
+
+.result_subheading {
+    margin-bottom: 12px;
+}
+
+

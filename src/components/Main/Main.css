@@ -1,0 +1,37 @@
+.worksection {
+    padding-right: 40px;
+}
+
+
+.results {
+    background-color: white;
+    padding: 40px;
+}
+
+.results_heading {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+}
+
+.results_tools {
+    display: flex;
+}
+
+.results_tool {
+    border: 1px solid lightgray;
+    padding: 0 10px;
+    margin-left: 5px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.result_text {
+    /* width: 75%; */
+    max-width: 1000px;
+}

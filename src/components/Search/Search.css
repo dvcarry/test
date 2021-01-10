@@ -1,0 +1,37 @@
+.search {
+    display: flex;
+    /* height: 40px; */
+    margin-top: 30px;
+}
+
+.search_div {
+    display: flex;
+    /* width: 800px; */
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid #ffc35f;
+    padding: 10px 10px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.search_input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #ffc35f;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    font-weight: 700;
+}

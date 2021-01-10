@@ -1,0 +1,22 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    font-size: 24px;
+    padding: 30px 0;
+    width: 300px;
+    border: 1px solid gray;
+    margin-right: 30px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

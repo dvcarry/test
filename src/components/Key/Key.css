@@ -1,0 +1,49 @@
+.key {
+    display: inline-block;
+    background-color: gray;
+    border-radius: 3px;
+    padding: 3px 10px 3px 15px;
+    margin-right: 5px;
+    color: white;
+    position: relative;
+}
+
+.i {
+    background-color: rgba(5,13,156,.55);
+}
+
+
+.key_text {
+    white-space: nowrap
+}
+
+.delete {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete:hover {
+    color: #ffc35f;
+}
+
+.text {
+    transition: all 0.6s;
+    display: none;
+    position: absolute;
+    left: 0; 
+    bottom: -60px;
+    background: rgba(5,13,156,.55);
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+    font-size: 14px;
+    padding: 10px;
+    white-space: nowrap
+}
+
+.key:hover .text {
+    display: block;
+}
+
+
