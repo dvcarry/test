@@ -19,6 +19,7 @@ export const Main = () => {
     const { pathname } = useLocation();
 
     const [keys, setKeys] = useState([])
+    const [filters, setFilters] = useState(false)
 
     const addKey = key => {
         const newKeys = [...keys, { text: key }]
@@ -30,9 +31,14 @@ export const Main = () => {
         setKeys(newKeys)
     }
 
+    const deleteLastKey = () => {
+        const newKeys = keys.slice(0, -1)
+        setKeys(newKeys)
+    }
+
     useEffect(() => {
         if (pathname === '/i') {
-            setKeys([{ text: 'статья i', placeholder: 'Гражданский кодекс РФ || Раздел 1. Основы' }])
+            setKeys([{ text: 'раздел i', placeholder: 'Гражданский кодекс РФ || Раздел 1. Основы' }])
         } else if (pathname === '/kp') {
             setKeys([{ text: 'место преступления' }])
         }
@@ -51,22 +57,33 @@ export const Main = () => {
                         keys={keys}
                         addKey={addKey}
                         deleteKey={deleteKey}
+                        deleteLastKey={deleteLastKey}
                     />
                     {/* <Filters /> */}
                 </div>
-                <div className='results'>
-                    <div className='results_heading'>
-                        <div >Российское законодательство (Версия Проф.)</div>
-                        <div className='results_tools'>
+
+                <div className='grid_section'>
+
+                    <div className='results'>
+                        <div className='results_heading'>
+                            <div >Российское законодательство (Версия Проф.)</div>
+                            {/* <div className='results_tools'>
                             <div className='results_tool'>П</div>
                             <div className='results_tool'>W</div>
                             <div className='results_tool'>...</div>
+                        </div> */}
+                            <div className='toggle_filters' onClick={() => setFilters(!filters)}>{`${filters ? 'Скрыть' : 'Показать'} фильтры`}</div>
                         </div>
+
+                        {
+                            Array(9).fill().map((item, index) => <Result key={index} heading={TEST_RESULT.heading} text={TEST_RESULT.text} keys={keys} />)
+                        }
                     </div>
-                    
                     {
-                        Array(9).fill().map((item, index) => <Result key={index} heading={TEST_RESULT.heading} text={TEST_RESULT.text} keys={keys} />)
+                        filters ? <Filters /> : null
                     }
+                    
+
                 </div>
             </div>
         </div>

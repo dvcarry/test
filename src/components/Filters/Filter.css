@@ -1,0 +1,25 @@
+.filter {
+    margin-bottom: 10px;
+}
+
+.filter_heading {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.filter_heading:hover {
+    font-weight: 500;
+}
+
+.filter_item {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.filter_inputs {
+    height: 100px;
+    width: 200px;
+    overflow: auto;
+    margin-top: 5px;
+}

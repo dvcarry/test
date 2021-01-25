@@ -1,34 +1,11 @@
 .filters {
-    display: flex;
-    margin-left: 30px;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.filters_items {
-    position: absolute;
-    top: 40px;
-    left: 0;
+    width: 400px;
+    padding: 30px;
     text-align: left;
-    background-color: white;
-    width: 180px;
+    
 }
 
-.filters_items ul {
-    list-style: none;
-    /* list-style: none; */
-    padding: 10px;
-    margin: 0;
-    font-size: 14px;
+.filters_heading {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
 }
-
-.filters_items li {
-    list-style-type: none;
-    padding: 5px;
-}
-
-.filters_items li:hover {
-    font-weight: 700;
-}
-

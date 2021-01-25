@@ -8,6 +8,10 @@
     padding: 40px;
 }
 
+.grid_section {
+    display: flex;
+}
+
 .results_heading {
     font-size: 20px;
     font-weight: 700;
@@ -34,4 +38,10 @@
 .result_text {
     /* width: 75%; */
     max-width: 1000px;
+}
+
+.toggle_filters {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 300;
 }

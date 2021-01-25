@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
-import { Filters } from '../Filters/Filters';
+import { Filters } from '../AdvancedSearch/AdvancedSearch';
 import { Key } from '../Key/Key';
 import './Search.css'
 
-export const Search = ({ keys, addKey, deleteKey }) => {
+export const Search = ({ keys, addKey, deleteKey, deleteLastKey }) => {
 
     const [text, setText] = useState('')
 
     const clickHandler = e => {
-        console.log('click', e.type)
         if (e.keyCode === 13 || e.type === 'click') {
             if (text.length > 0) {
                 addKey(text)
                 setText('')
+            }
+        }
+        if (e.keyCode === 8 || e.type === 'click') {
+            if (text.length === 0) {
+                deleteLastKey()
             }
         }
 
@@ -44,7 +48,7 @@ export const Search = ({ keys, addKey, deleteKey }) => {
             >
                 Найти
             </button>
-            <Filters />
+            {/* <Filters /> */}
         </div>
     )
 }
